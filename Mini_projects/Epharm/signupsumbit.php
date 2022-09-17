@@ -13,6 +13,11 @@
     $name= $_POST['name'];
     $email= $_POST['email'];
     $password= $_POST['password'];
+    if($email=="")
+    {
+        echo "Enter all valid fields";
+        exit;
+    }
     $sql="INSERT INTO customers(email,password,name) VALUES ('$email','$password','$name')";
 
     $result= mysqli_query($conn,$sql);
