@@ -27,4 +27,5 @@
     }
     echo "registration successful!";
     mysqli_close($conn);
-?>
+   
+?> 
