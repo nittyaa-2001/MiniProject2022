@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body style="background-color: rgba(144,238,144, 0.1) ;">
+    <div id="headlink">
+      <img src="logo.png" height="200px" width="200px">
+    </div>
+    <div >
+       
+    
+        <div id="simpleModal" class="modal">
+            <div id="modal-content">
+              
+              <div id="modal-header">
+                
+                <h2>Create your Account!</h1>
+              </div>
+              
+              <div id="modal-body">
+                <form action="signupsubmit.php" method="post" id="form1">
+                    Enter the name : <br/>
+                    <input type="text" name="name"/><br/>
+                    Enter the email : <br/>
+                    <input type="text" name="email" required/><br/>
+                    Enter the password : <br/>
+                    <input type="password" name="password" required/><br/>
+                    Enter Gender : <br>
+                    <select name="gender" >
+                      <option value=" "> </option>
+                      <option value="male">male</option>
+                      <option value="female">female</option>
+                    </select><br>
+
+                    Enter Age : <br>
+                    <input name="age" type="number" min="15" max="100" value="age"><br>
+                    Enter Address: <br>
+                    <textarea name="address" " cols="30" rows="2">write your address</textarea>
+
+                </form>
+            
+              </div>
+              
+              <div id="modal-footer" >
+                <button  type="submit" form="form1" onclick="fun1()" name="submit" value="Continue">Continue</button>
+               
+
+              </div>
+            </div>
+    
+        </div>
+        
+       
+        <script src="modal.js"> </script>
+        
+        
+    </div>
+
+    <div></div>
+</body>
+</html>

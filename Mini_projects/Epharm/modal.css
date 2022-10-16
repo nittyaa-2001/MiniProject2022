@@ -1,60 +1,44 @@
-.button{
-    background-color: coral;
-    padding: 1em 2em;
-    color: blue;
-    border: 0;
+#headlink {
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  /* background-color: blue; */
 }
 
-.button:hover{
-    background: lightgreen;
+#modal-content {
+  background-color: silver;
+  margin-top: 200px;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
-.modal{
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    /* background-color: blue; */
+#modal-header h2,
+#modal-footer h3 {
+  margin: 0;
+}
+#modal-header {
+  background-color: rgb(40, 149, 40);
+  padding: 10px;
+  color: azure;
+  text-align: center;
 }
 
-#modal-content{
-    background-color:silver;
-    margin: 20%;
-    
-    
+#modal-body {
+  padding: 10px 20px;
+  text-align: center;
 }
 
-
-.closeBtn{
-    color: red;
-    float: right;
-}
-
-.closeBtn:hover{
-    color: black;
-    background-color: violet;
-}
-
-#modal-header h2,#modal-footer h3{
-    margin: 0;
-}
-#modal-header{
-    background-color: coral;
-    padding: 10px;
-    color: azure;
-}
-
-#modal-body{
-    padding: 10px 20px;
-}
-
-#modal-footer{
-    background-color: coral;
-    padding: 10px;
-    color: azure;
-    text-align: center;
+#modal-footer {
+  background-color: rgb(45, 133, 45);
+  padding: 10px;
+  color: azure;
+  font-size: medium;
+  text-align: center;
 }

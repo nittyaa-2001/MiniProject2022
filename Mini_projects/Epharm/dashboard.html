@@ -4,38 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <title></title>
 </head>
 <body>
-    <div>
-        <button id="modalBtn" class="button">Sign-Up</button>
-    
-        <div id="simpleModal" class="modal">
+   
+        
+    <div id="header">
+        <div class="row1">
+            <a href="dashboard.html"><img id="logo" src="logo.png" ></a>
+            
+        </div>
+        <div class="row1">
+            <a class="headlink" href="home.html"><h2>Home</h2></a>
+        </div>
+        <div class="row1">
+            <a class="headlink" href="aboutus.html"><h2>About Us</h2></a>
+        </div>
+        <div class="row1">
+            <a class="headlink" href="service.html"><h2>Service</h2></a>
+        </div>
+        <div class="row1">
+            <a class="headlink" href="contactus.html"><h2>Contact us</h2></a>
+        </div>
+        <div class="row1">
+           <button id="modalBtn"class="btn1" >Login or Sign-Up</button>
+           <div id="simpleModal" class="modal">
             <div id="modal-content">
               
               <div id="modal-header">
                 <button  class="closeBtn">&times;</button>
-                <h2>Create your Account!</h1>
+                <h2>Login in to Epharm</h1>
               </div>
               
               <div id="modal-body">
-                <form action="signupsumbit.php" method="post" id="form1">
-                    Enter the name : <br/>
-                    <input type="text" name="name"/><br/>
-                    Enter the email : <br/>
-                    <input type="text" name="email"/><br/>
-                    Enter the password : <br/>
-                    <input type="password" name="password"/><br/>
-                    
+                <form action="login_submit.php" method="post" id="form1">
+                    <!-- Enter the name : <br/>
+                    <input type="text" name="name"/><br/> -->
+                    Enter the email  <br/>
+                    <input type="text" name="email" required/><br/>
+                    Enter the password  <br/>
+                    <input type="password" name="password" required/><br/>
+                    <input type="submit" name="submit" value="submit">
                 </form>
-            
+
               </div>
               
               <div id="modal-footer" >
 
-                <input type="submit" form="form1" name="submit" value="Submit"/>
-              </div>
+                <button class="btn1"style="width: 180px;" ><a class="headlink" href="signup.html">create new account</a></button>
+              
             </div>
     
         </div>
@@ -45,7 +63,17 @@
         
         
     </div>
-
-    <div></div>
+        </div>
+    </div>
+        
+    <div id="bodycontent" >
+            <div id="content">
+                <div><h1>EPHARM</h1></div>
+                <div><h2 style="color: black;"><br>This is an e- pharmacy web based application which provide<br> medicines to the patients as well as it will connect dealers<br> with the suppliers all over the country.<br><br></h2></div>
+                <div><button id="btn2"><a href="learnmore.html" style="text-decoration:none ;color: darkgreen;"><h2>Learn more</h2></a></button></div>
+            </div>
+    </div>
+        
+  
 </body>
 </html>
